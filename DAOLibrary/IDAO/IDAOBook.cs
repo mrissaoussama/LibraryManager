@@ -11,7 +11,10 @@ namespace DAOLibrary
         public void Update(Book book);
         public void Delete(Book book);
         public IEnumerable<Book> FindAll();
-        public IEnumerable<Book> Find();
+        public IEnumerable<Book> FindById(String id);
+        public IEnumerable<Book> FindByTitle(String title);
+        public IEnumerable<Book> FindByCategory(String category);
+
 
 
     }

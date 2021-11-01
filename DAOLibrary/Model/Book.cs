@@ -8,10 +8,26 @@ namespace DAOLibrary.Model
 {
    public class Book
     {
-        private string Id { get; set; }
-        private string Title { get; set; }
-        private int Quantity { get; set; }
-        private string Category { get; set; }
 
+public Book(string id, string title, int quantity, string category)
+        {
+            Id = id;
+            Title = title;
+            Quantity = quantity;
+            Category = category;
+        }
+
+
+        public Book(string title, int quantity, string category)
+        {
+            Title = title;
+            Quantity = quantity;
+            Category = category;
+        }
+
+        public string Id { get => Id; set => Id = value; }
+        public string Title { get => Title; set => Title = value; }
+        public int Quantity { get => Quantity; set => Quantity = value; }
+        public string Category { get => Category; set => Category = value; }
     }
 }
